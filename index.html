@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>EJEMPLO JSON</title>
+<link rel="stylesheet" type="text/css" href="css/estilos.css">
+
+<body>
+  <h1>Aplicación JSON</h1>
+  <hr />
+  <div id="formulario">
+	<fieldset>
+		<legend>Datos personales</legend>
+		<label>Nombre:</label>
+        <input id="nombre" type="text" name="nombre" onchange="agregarNombre(this)"/>
+		<br/><br/>
+		<label>Año:</label>
+        <input type="number" name="año" onchange="agregarAño(this)"/>
+		<br/><br/>
+		<label>Genero:</label>
+        
+        <select name="genero" onchange="agregarGenero(this)" type="text">
+          <option>Seleccione un genero</option>
+          <option type="text">Acción</option>
+          <option type="text">Terror</option>
+          <option type="text">Comedia</option>
+          <option type="text">Otros</option>
+        </select>
+        <br/><br/>
+        <label >Reparto:</label>
+		<br/><br/>
+        <label>Actor 1:</label>
+        <input id="nombre"type="text" name="act1" onchange="agregarAct1(this)"/>
+        <br/><br/>
+        <label>Actor 2:</label>
+        <input type="text" name="act2" onchange="agregarAct2(this)"/>
+        <br/><br/>
+        <label>Actor 3:</label>
+        <input type="text" name="act3" onchange="agregarAct3(this)"/>
+        <br/><br/>
+        <label>Sinopsis:</label>
+		<input type="text" name="sinopsis" onchange="agregarSinopsis(this)"/>
+		<br/><br/>
+		<label>Actualizar/Eliminar:</label>
+		<br/><br/>
+		<input id="actualizarEliminar" type="number"/>
+		<br/><br/>
+		
+		<button onclick="agregar();">Agregar</button>
+	<!--	<button onclick="mostrar();">Mostrar</button> -->
+        <button onclick="actu();">Actualizar</button>
+		<button onclick="eliminar();">Eliminar</button>
+	</fieldset>
+  <fieldset>
+    <label>Buscar</label>
+    <input type="text" name="Buscar"/>
+    <button onclick="buscar()">Buscar</button>
+  </fieldset>
+    
+  </div>
+  <br>
+  <hr/>
+  
+  <h4>Regitro en curso</h4>
+  <div id="registro">
+	  <div id="resultado1">Nombre: </div>
+	  <div id="resultado2">Año: </div>
+	  <div id="resultado3">Genero: </div>
+	  <div id="resultado4">Actor 1: </div>
+	  <div id="resultado5">Actor 2: </div>
+	  <div id="resultado6">Actor 3: </div>
+	  <div id="resultado7">Sinopsis: </div>
+  </div>
+  <hr/>
+  <h4>Resultados</h4>
+  <table>
+	<tr>
+		<th>Nombre</th>
+		<th>Año</th>
+		<th>Genero</th>
+        <th>Reparto</th>
+        <th>Sinopsis</th>
+	</tr>
+  </table>
+  <table id="resultado8"></table>
+  <script src="js/script.js"></script>
+  <script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
