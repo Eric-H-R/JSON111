@@ -1,0 +1,71 @@
+body{
+	background-color: #E6F5FF;
+}
+
+h1{
+	text-align: center;
+	color:white;
+	background-color: midnightblue;
+}
+
+button{
+	border-radius: 20px;
+	margin-left: 40px;
+}
+
+button:hover{
+	background-color: rgba(215, 255, 255, 0.993);
+}
+
+.lw {
+	font-size: 60px;
+}
+
+#formulario {
+	width: 400px;
+	margin: 0 auto;
+}
+
+label {
+	width: 100px;
+	display: inline-block;
+}
+
+table {
+	width: 400px;
+	margin: 0 auto;
+}
+
+table,
+tr,
+th,
+td {
+	border: 1px solid #000;
+	border-collapse: collapse;
+	
+}
+
+th{
+	background-color: #C2E7FF;
+}
+
+table th,
+td {
+	width: 133px;
+}
+
+
+#registro {
+	margin-left: 450px;
+	padding: 10px;
+}
+
+h4 {
+	margin-left: 420px;
+}
+
+fieldset{
+	box-shadow: 5px 5px 5px #C2E7FF;
+	border-radius: 30px;
+	font-weight: bold;
+}
